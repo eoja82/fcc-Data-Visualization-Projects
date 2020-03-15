@@ -14,10 +14,6 @@ d3.json("https://raw.githubusercontent.com/freeCodeCamp/ProjectReferenceData/mas
   const dataSet = data.monthlyVariance;
   const minVariance = d3.min(dataSet, (d) => d.variance);
   const maxVariance = d3.max(dataSet, (d) => d.variance);
-  const barWidth = w / dataSet.length;
-  const barHeight = h / 12;
-  
-  const yearParse = d3.timeParse("%Y");
   const tempYears = dataSet.map( (d) => d.year);
   const yearFilter = tempYears.filter( (item, index) => tempYears.indexOf(item) === index);
   const monthFormat = d3.timeFormat("%B");
@@ -42,16 +38,6 @@ d3.json("https://raw.githubusercontent.com/freeCodeCamp/ProjectReferenceData/mas
                 .domain(months)
                 .range([padding, h - padding]); 
   
-  const xAxis = d3.axisBottom(scaleAxisX).tickValues(scaleAxisX.domain().filter( (d) => d % 10 === 0));
-  const yAxis = d3.axisLeft(scaleAxisY).tickFormat(monthFormat);
-  const xAxisGroup = svg.append("g")
-     .attr("transform", "translate(0, " + (h - padding) + ")")
-     .attr("id", "x-axis")
-     .call(xAxis);
-  const yAxisGroup = svg.append("g")
-     .attr("transform", "translate(" + padding + ", 0)")
-     .attr("id", "y-axis")
-     .call(yAxis);
   const toolTip = d3
      .select("#container")
      .append("div")
