@@ -1,0 +1,26 @@
+body {
+    text-align: center;
+    background-color: rgb(97, 108, 117, .5);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+svg {
+    background-color: lightgrey;
+    border-radius: 5px;
+}
+.dot {
+    stroke: black;
+  }
+div.tooltip {
+    background-color: rgb(255, 167, 35);
+    padding: 3px;
+    border-radius: 5px;
+    position: absolute;			
+    text-align: center;			
+    width: 175px;					
+    height: auto;					
+    font: 20px ;		
+    border: 0px;		
+    border-radius: 5px;			
+    pointer-events: none;	
+}
