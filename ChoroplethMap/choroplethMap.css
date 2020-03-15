@@ -1,0 +1,57 @@
+body {
+  text-align: center;
+  background-color: rgb(199, 199, 199);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 0 1.5rem 3rem;
+}
+svg {
+  background-color: lightgrey;
+  border-radius: 5px;
+}
+.counties :hover {
+  fill: rgb(255, 167, 35);
+}
+.county-borders {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 0.5px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  pointer-events: none;
+}
+div.tooltip {
+  background-color: rgb(255, 167, 35);
+  padding: 3px;
+  border-radius: 5px;
+  position: absolute;			
+  text-align: center;			
+  width: 175px;					
+  height: auto;				
+  font: 20px ;		
+  border: 0px;				
+  pointer-events: none;	
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.counties {
+  fill: none;
+}
+.states {
+  fill: none;
+  stroke: #fff;
+  stroke-linejoin: round;
+}
+#d3Projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 960px;
+  justify-content: center;
+  margin: 0 auto;
+}
+#d3Projects a {
+  padding: 0 1rem 1rem;
+}
