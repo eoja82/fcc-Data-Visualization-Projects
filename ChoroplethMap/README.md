@@ -16,3 +16,5 @@ Requirements were to complete the following user stories:
 And to utilize the following datasets:  
   US Education Data: https://raw.githubusercontent.com/no-stack-dub-sack/testable-projects-fcc/master/src/data/choropleth_map/for_user_education.json  
   US County Data: https://raw.githubusercontent.com/no-stack-dub-sack/testable-projects-fcc/master/src/data/choropleth_map/counties.json  
+
+View: https://codepen.io/EOJA/full/OePXNb.
