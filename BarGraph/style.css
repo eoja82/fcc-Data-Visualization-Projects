@@ -1,6 +1,6 @@
 body {
   text-align: center;
-  background-color: rgb(97, 108, 117);
+  background-color: rgb(182, 182, 182);
 }
 svg {
   background-color: lightgrey;
@@ -25,4 +25,18 @@ div.tooltip {
   border: 0px;		
   border-radius: 5px;			
   pointer-events: none;	
+}
+#otherD3 {
+  padding: 1.5rem;
+}
+#d3Projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 960px;
+  justify-content: center;
+  margin: 0 auto;
+}
+#d3Projects a {
+  padding: 0 1rem 1rem;
 }
