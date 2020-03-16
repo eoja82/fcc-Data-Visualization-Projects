@@ -97,12 +97,12 @@ function ready() {
         .style("left", d3.event.pageX -87.5 + "px") 
         .style("top", d3.event.pageY - 75 + "px");
     })
-     .on("mouseout", function(d) {
-      toolTip
-        .transition()
-        .duration(0)
-        .style("opacity", 0);
-     });
+    .on("mouseout", function(d) {
+    toolTip
+      .transition()
+      .duration(0)
+      .style("opacity", 0);
+    });
    
   svg.append("path")
       .datum(topojson.mesh(us, us.objects.counties, function(a, b) { return a !== b; }))
