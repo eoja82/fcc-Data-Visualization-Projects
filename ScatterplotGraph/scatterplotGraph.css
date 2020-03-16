@@ -1,26 +1,53 @@
 body {
-    text-align: center;
-    background-color: rgb(97, 108, 117, .5);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  background-color: rgb(97, 108, 117, .5);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
+#container {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
 svg {
-    background-color: lightgrey;
-    border-radius: 5px;
+  background-color: lightgrey;
+  border-radius: 5px 5px 0 0;
 }
 .dot {
-    stroke: black;
+  stroke: black;
   }
 div.tooltip {
-    background-color: rgb(255, 167, 35);
-    padding: 3px;
-    border-radius: 5px;
-    position: absolute;			
-    text-align: center;			
-    width: 175px;					
-    height: auto;					
-    font: 20px ;		
-    border: 0px;		
-    border-radius: 5px;			
-    pointer-events: none;	
+  background-color: rgb(255, 167, 35);
+  padding: 3px;
+  border-radius: 5px;
+  position: absolute;			
+  text-align: center;			
+  width: 175px;					
+  height: auto;					
+  font: 20px ;		
+  border: 0px;		
+  border-radius: 5px;			
+  pointer-events: none;	
+}
+#legend {
+  display: flex;
+  flex-direction: row;
+  max-width: 800px;
+  margin: -2rem auto 0;
+  justify-content: space-evenly;
+  background-color: lightgray;
+  border-radius: 0 0 5px 5px;
+}
+#otherD3 {
+  padding: 1.5rem;
+}
+#d3Projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 960px;
+  justify-content: center;
+  margin: 0 auto;
+}
+#d3Projects a {
+  padding: 0 1rem 1rem;
 }
