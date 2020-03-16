@@ -1,10 +1,14 @@
 const w = 960;
 const h = 600;
 const padding = 60;
-const svg = d3.select("#container").append("svg")
-  .attr("width", w).attr("height", h);
-const legendsvg = d3.select("#legend").append("svg")
-  .attr("width", 960).attr("height", 50);
+const svg = d3.select("#container")
+  .append("svg")
+  .attr("width", w)
+  .attr("height", h);
+const legendsvg = d3.select("#legend")
+  .append("svg")
+  .attr("width", 960)
+  .attr("height", 50);
 const legendPadding = 10;
 
 d3.json("https://cdn.rawgit.com/freeCodeCamp/testable-projects-fcc/a80ce8f9/src/data/tree_map/movie-data.json")
