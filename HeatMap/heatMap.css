@@ -33,6 +33,9 @@ div.tooltip {
 	align-items: center;
 	padding: 1 1.5rem 1.5rem;
 }
+#legend svg {
+	padding: .5rem .5rem 0;
+}
 #otherD3 {
 	margin-top: 3.5rem;
 }
