@@ -55,3 +55,8 @@ footer {
 #d3Projects a {
   padding: 0 1rem 1rem;
 }
+@media only screen and (max-width: 1024px) {
+  #container {
+    overflow-x: scroll;
+  }
+}
