@@ -3,11 +3,6 @@ body {
   background-color: rgb(97, 108, 117, .5);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-#container {
-  display: flex;
-  margin: 0 auto;
-  justify-content: center;
-}
 svg {
   background-color: lightgrey;
   border-radius: 5px 5px 0 0;
@@ -29,11 +24,7 @@ div.tooltip {
   pointer-events: none;	
 }
 #legend {
-  display: flex;
-  flex-direction: row;
-  max-width: 800px;
-  margin: -2rem auto 0;
-  justify-content: space-evenly;
+  margin: -2rem 0;
   background-color: lightgray;
   border-radius: 0 0 5px 5px;
 }
@@ -50,4 +41,12 @@ div.tooltip {
 }
 #d3Projects a {
   padding: 0 1rem 1rem;
+}
+@media only screen and (max-width: 1024px) {
+  #container, #legend {
+    width: 95vw;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: scroll;
+  }
 }
