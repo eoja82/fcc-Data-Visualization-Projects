@@ -27,9 +27,6 @@ div.tooltip {
   padding: .5rem .5rem 0;
 }
 #legend {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding-top: 20px;
 }
 #otherD3 {
@@ -45,4 +42,9 @@ div.tooltip {
 }
 #d3Projects a {
   padding: 0 1rem 1rem;
+}
+@media only screen and (max-width: 1024px) {
+  #container, #legend {
+    overflow-x: scroll;
+	}
 }
