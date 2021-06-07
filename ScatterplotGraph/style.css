@@ -24,7 +24,12 @@ div.tooltip {
   pointer-events: none;	
 }
 #legend {
-  margin: -2rem 0;
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  margin: -2rem auto 0;
   background-color: lightgray;
   border-radius: 0 0 5px 5px;
 }
