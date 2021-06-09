@@ -37,6 +37,19 @@ a {
 .w3-card:hover .imgOverlay {
   display: flex;
 }
+.fa-chevron-right {
+  font-size: smaller;
+}
+@keyframes animateIcon {
+  0% {transform: translateX(0px);}
+  50% {transform: translateX(3px);}
+  100% {transform: translateX(0px);}
+}
+.w3-btn:hover .fa-chevron-right {
+  animation-name: animateIcon;
+  animation-duration: .5s;
+  transition: linear;
+}
 .projectLink {
   margin: 0 .25rem;
 }
