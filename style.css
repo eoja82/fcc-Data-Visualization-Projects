@@ -1,8 +1,26 @@
+:root {
+  --firstRow-margin: 2rem 1rem;
+  --secondRow-margin: 0 1rem 2rem;
+  --w3-third-padding: 0 1rem;
+}
+@media only screen and (max-width: 440px) {
+ :root {
+  --firstRow-margin: 1rem 1rem 0;
+  --secondRow-margin: 0 1rem 1rem;
+  --w3-third-padding: 1rem;
+ } 
+}
 a {
   text-decoration: none;
 }
-.contact {
-  font-size: larger;
+.firstRow {
+  margin: var(--firstRow-margin);
+}
+.secondRow {
+  margin: var(--secondRow-margin);
+}
+.w3-third {
+  padding: var(--w3-third-padding);
 }
 .imgContainer {
   position: relative;
@@ -21,4 +39,7 @@ a {
 }
 .projectLink {
   margin: 0 .25rem;
+}
+.contact {
+  font-size: larger;
 }
