@@ -4,3 +4,21 @@ a {
 .contact {
   font-size: larger;
 }
+.imgContainer {
+  position: relative;
+}
+.imgOverlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.w3-card:hover .imgOverlay {
+  display: flex;
+}
+.projectLink {
+  margin: 0 .25rem;
+}
