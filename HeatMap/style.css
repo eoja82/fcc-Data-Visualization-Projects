@@ -1,12 +1,13 @@
 body {
 	text-align: center;
-	background-color: rgb(97, 108, 117, .5);
+	background-color: rgb(255, 255, 255);
+  color: rgb(48, 48, 48);
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	padding: 0 1.5rem 1.5rem;
 }
 
 svg {
-	background-color: lightgrey;
+	background-color: rgb(225, 225, 225);
 	border-radius: 5px;
 }
 .cell:hover {
