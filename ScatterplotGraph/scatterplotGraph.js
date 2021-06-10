@@ -52,15 +52,17 @@ d3.json("https://raw.githubusercontent.com/freeCodeCamp/ProjectReferenceData/mas
         div
           .transition()
           .duration(0)
-          .style("opacity", 0.8);
+          .style("opacity", 0.9)
+          .style("width", "200px")
+          .style("height", "100px");
         div
           .attr("data-year", dateParse(d.Year))
           .attr("id", "tooltip")
           .html(function () {
             return "<span>" + d.Name + ", " + d.Year + "<br>" + "Time: " + d.Time + "<br>" + d.Doping + "</span>";
           })
-          .style("left", d3.event.pageX + "px")
-          .style("top", d3.event.pageY + "px");
+          .style("left", d3.event.pageX - 100 + "px")
+          .style("top", d3.event.pageY - 115 + "px");
       })
       .on("mouseout", function (d) {
         div
