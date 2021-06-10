@@ -52,9 +52,7 @@ d3.json("https://raw.githubusercontent.com/freeCodeCamp/ProjectReferenceData/mas
         div
           .transition()
           .duration(0)
-          .style("opacity", 0.9)
-          .style("width", "200px")
-          .style("height", "100px");
+          .style("opacity", 0.9);
         div
           .attr("data-year", dateParse(d.Year))
           .attr("id", "tooltip")
