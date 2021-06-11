@@ -1,3 +1,4 @@
+console.log("javascript loaded")
 function getWidth() {
   const w = window.innerWidth
   const projectBtns = document.querySelectorAll(".project")
